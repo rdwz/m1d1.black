@@ -1,7 +1,7 @@
 {
 	"name": "m1d1.black",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"build": "astro build",
@@ -16,11 +16,11 @@
 		"startCommand": "pnpm start"
 	},
 	"devDependencies": {
-		"astro": "^1.7.0"
+		"astro": "^1.7.2"
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "^1.0.0",
-		"astro-compress": "^1.1.23",
+		"astro-compress": "^1.1.24",
 		"astro-compressor": "^0.1.2",
 		"astro-icon": "^0.8.0",
 		"astro-robots-txt": "^0.3.10",
@@ -32,6 +32,6 @@
 		"prettier": "^2.8.1",
 		"prettier-plugin-astro": "^0.7.0",
 		"sass": "^1.57.1",
-		"svgo": "2.8.0"
+		"svgo": "~2.8.0"
 	}
 }
