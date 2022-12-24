@@ -1,0 +1,99 @@
+:root {
+	/* Container widths */
+	--container-widht: 90vw;
+	--container-max-width: 90rem;
+	--container-hero-max-width: 90rem;
+
+	--color-bg: hsl(200, 6%, 10%);
+	// --accent: --var(teal-5);
+	// --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+
+	/* Colors */
+	/* https://colorhunt.co/palette/f38181fce38aeaffd095e1d3 */
+	// --color-bg: hsl(0deg 0% 98%);
+	--color-bg-alt: hsl(0, 0%, 100%);
+	--color-primary: hsl(272, 62%, 63%);
+	--color-primary-darker: hsl(271, 62%, 53%);
+	--color-secondary: hsl(285, 100%, 85%);
+	--color-tertiary: hsl(169, 56%, 73%);
+	--color-text-primary: hsl(221, 39%, 11%);
+	--color-text-primary-inverted: hsl(210, 20%, 98%);
+	--color-text-white: hsl(0, 0%, 100%);
+	--color-text-black: hsl(221, 39%, 11%);
+	--color-border: hsla(0, 0%, 0%, 0.1411764705882353);
+	--color-border-light: hsl(203, 100%, 94%);
+	--gradient-primary: linear-gradient(
+			95deg,
+			hsl(204, 100%, 51%) 15%,
+			hsl(252, 63%, 56%) 45%,
+			hsl(324, 75%, 57%) 75%,
+			hsl(5, 96%, 62%)
+		)
+		95%/200% 100%;
+
+	/* Colors: Brands */
+	--color-bandcamp: hsl(193, 29%, 52%);
+	--color-beatport: hsl(155, 100%, 50%);
+	--color-facebook: hsl(220, 46%, 48%);
+	--color-instagram: hsl(326, 57%, 48%);
+	--color-soundcloud: hsl(28, 100%, 50%);
+	--color-spotify: hsl(141, 73%, 42%);
+
+	/* Spacer Sizes */
+	--spacer-tiny: 0.25rem;
+	--spacer-xs: 0.5rem;
+	--spacer-sm: 1rem;
+	--spacer-md: 2.5rem;
+	--spacer-lg: 4rem;
+	--spacer-xl: 6rem;
+
+	/* Font Scale */
+	--size-h1: 2.488rem;
+	--size-h2: 2.074rem;
+	--size-h3: 1.728rem;
+	--size-h4: 1.44rem;
+	--size-h5: 1.2rem;
+	--size-h6: 0.833rem;
+	--size-p: 1rem;
+
+	/* Font weight */
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-bold: 600;
+	--weight-bolder: 700;
+	--weight-black: 900;
+
+	/* Header height */
+	--header-height: 6rem;
+	--header-scrolled-height: 4rem;
+
+	/* Drop Shadows */
+	--shadow-sm: drop-shadow(-1px 1px 2px var(--color-secondary));
+	--shadow-md: drop-shadow(0px 2px 4px var(--color-secondary));
+
+	/* Box shadow */
+	--box-shadow: 0 1rem 5rem -0.5rem var(--color-primary);
+	--box-shadow-light: 0 1rem 5rem -1rem var(--color-primary);
+	--box-shadow-button: 0 0 20px 5px hsla(5, 96%, 62%, 0.2);
+	--box-shadow-input: 0 20px 48px -14px hsla(212, 9%, 63%, 0.25);
+
+	/* Transitions */
+	--transition: all 0.3s ease-in-out;
+
+	&[data-theme='dark'] {
+		/* Colors */
+		--color-bg: hsl(210, 23%, 10%);
+		--color-bg-alt: hsl(221, 39%, 11%);
+		--color-primary: hsl(272, 62%, 63%);
+		--color-primary-darker: hsl(271, 62%, 53%);
+		--color-secondary: hsl(285, 100%, 50%);
+		--color-tertiary: hsl(157, 55%, 69%);
+		--color-text-primary: hsl(210, 20%, 98%);
+		--color-text-primary-inverted: hsl(221, 39%, 11%);
+		--color-border: hsla(0, 0%, 100%, 0.1);
+		--color-border-light: hsl(240, 16%, 18%);
+
+		/* Box shadow */
+		--box-shadow-input: none;
+	}
+}

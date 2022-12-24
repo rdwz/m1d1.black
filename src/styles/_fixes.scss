@@ -1,0 +1,28 @@
+/* Antialiased Text */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile WebKit */
+
+body {
+	// min-height: 100vh;
+	// min-height: available;
+}
+
+html {
+	overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 0;
+}

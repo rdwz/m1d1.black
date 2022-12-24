@@ -1,0 +1,51 @@
+:root {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.75;
+	overflow-wrap: break-word;
+	scroll-behavior: smooth;
+	tab-size: 4;
+}
+
+*,
+:after,
+:before {
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+:after,
+:before {
+	text-decoration: inherit;
+	vertical-align: inherit;
+}
+
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	min-width: 5em;
+}
+
+[aria-busy='true'] {
+	cursor: progress;
+}
+[aria-controls] {
+	cursor: pointer;
+}
+[aria-disabled='true'],
+[disabled] {
+	cursor: not-allowed;
+}
+[aria-hidden='false'][hidden]:not(:focus) {
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
+}

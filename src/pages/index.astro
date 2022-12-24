@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Base.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout>
+	<Header />
+	<main>
+		<article style="display:none">
+			<h3>A1 Black M1D1 - Thangs</h3>
+			<p>
+				The work on the A-side perfectly combines reduced house rhythms, deep sub frequencies
+				seasoned with chords under the influence of dub techno music, periodically creating an
+				atmospheric atmosphere as a contrast to the dirty production and street rap vocals that are
+				dosed throughout the work as a guiding thread. However, it is not a hip house work in which
+				the vocalist takes over the dominance, but pieces of the recorded male voice are literally
+				used as a groove element, in places developing the narrative as an arrangement figure. Those
+				who know me very well, are aware that I have been totally addicted to dub elements in
+				electronic music ever since Basic Channel appeared, so this record was close to my heart
+				from the first listen. Although it is not a musical revolution, but rather a combination of
+				nostalgic elements from the rich history of electronic music.
+			</p>
+			<h3>B1 Black M1D1 - Diazepam</h3>
+			<p>
+				A raw production with a dark mood and a syncopated beat, intelligently continues the street
+				vibe of the A-side. The atmosphere of a full-length thriller, vulgarisms, atonal sections
+				and a bass drum that breaks kidney stones, is definitely not for the average listener of
+				house music and similar genres, but the right team would enjoy every beat of this excellent
+				arrangement.
+			</p>
+			https://mixmagadria-com.translate.goog/feature/vinyl-tjedna-black-m1d1-diazepam-ep-pick-cell-records?_x_tr_sl=auto&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp
+		</article>
+	</main>
+	<Footer />
+</Layout>
+
+<style lang="scss">
+	body {
+		background-blend-mode: screen;
+		// background-image: var(--gradient-8);
+		background-color: var(--color-bg);
+		// background: rgb(67,67,67);
+		// background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(24,26,27,1) 35%, rgba(0,0,0,1) 100%);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center 64%;
+		background-size: clamp(50%, 60vh, 100vh);
+		background-image: url('/bg.webp');
+		// background-image: url('/noise.png');
+		// background-image: image-set(url('/bg.avif') 1x, url('/bg.webp') 1x);
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		&::after {
+			position: fixed;
+			inset: 0;
+			z-index: -1;
+			--grad: radial-gradient(at 50%, red, #{rgba(red, 0.2)} 75%, transparent 100%);
+			--mask: var(--grad), var(--grad);
+			mask: var(--mask);
+			mask-composite: intersect;
+			mix-blend-mode: color;
+			content: '';
+		}
+		&::before {
+			background: #000;
+			filter: url(#f);
+		}
+		&::after {
+			background: linear-gradient(90deg, darken(purple, 0.5), navy 20%, aqua);
+			// background: linear-gradient(90deg, purple, navy 20%, aqua);
+		}
+	}
+	main svg,
+	main h1 {
+		filter: drop-shadow(3px 5px 2px rgb(255 255 255 / 0.4));
+	}
+</style>

@@ -1,0 +1,16 @@
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header set X-Frame-Options "SAMEORIGIN"
+	Header set X-Content-Type-Options "nosniff"
+	Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+	"expr=%{HTTPS} =~ /on/"
+	# Header set Referrer-Policy "same-origin"
+	Header add Content-Security-Policy "script-src 'strict-dynamic' 'nonce-VTydQwf2VHNfy29C53u2EaNO-x6h3n8lwwdI17kQMjI' 'unsafe-inline' https:; object-src 'none'; base-uri 'self'; require-trusted-types-for 'script';"
+	Header set Referrer-Policy "same-origin"
+	Header set Referrer-Policy "same-origin"
+	Header set Permissions-Policy: geolocation=(self), microphone=()
+	Header set Cross-Origin-Embedder-Policy: (unsafe-none|require-corp); report-to="default"
+	Header set Cross-Origin-Embedder-Policy-Report-Only: (unsafe-none|require-corp); report-to="default"
+	Header set Cross-Origin-Opener-Policy: (same-origin|same-origin-allow-popups|unsafe-none); report-to="default"
+	Header set Cross-Origin-Resource-Policy: (same-site|same-origin|cross-origin)
+</IfModule>

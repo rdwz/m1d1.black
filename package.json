@@ -1,0 +1,37 @@
+{
+	"name": "m1d1.black",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"build": "astro build",
+		"check": "astro check && prettier -c --plugin-search-dir=. .",
+		"deploy": "node deploy.cjs",
+		"dev": "astro dev",
+		"format": "prettier --cache -w --plugin-search-dir=. .",
+		"preview": "astro preview",
+		"start": "astro dev"
+	},
+	"stackblitz": {
+		"startCommand": "pnpm start"
+	},
+	"devDependencies": {
+		"astro": "^1.7.0"
+	},
+	"dependencies": {
+		"@astrojs/sitemap": "^1.0.0",
+		"astro-compress": "^1.1.23",
+		"astro-compressor": "^0.1.2",
+		"astro-icon": "^0.8.0",
+		"astro-robots-txt": "^0.3.10",
+		"autoprefixer": "^10.4.13",
+		"ftp-deploy": "^2.4.3",
+		"open-props": "^1.5.3",
+		"postcss": "^8.4.20",
+		"postcss-jit-props": "^1.0.8",
+		"prettier": "^2.8.1",
+		"prettier-plugin-astro": "^0.7.0",
+		"sass": "^1.57.1",
+		"svgo": "2.8.0"
+	}
+}

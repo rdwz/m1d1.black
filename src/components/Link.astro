@@ -1,0 +1,51 @@
+---
+import { Icon } from 'astro-icon'
+
+export interface Props {
+	icon: string
+	name: string
+	link: string
+}
+
+const { name, icon, link } = Astro.props
+---
+
+<li>
+	<a aria-label={name} href={new URL(link, Astro.url)} rel="external noopener" target="_blank">
+		<Icon name={icon} />
+	</a>
+</li>
+
+<style lang="scss">
+	li {
+		margin: 0.4rem;
+		width: 6rem;
+	}
+	li a {
+		vertical-align: middle;
+		height: 5rem;
+	}
+	svg {
+		fill: white !important;
+	}
+	[astro-icon] {
+		animation: var(--animation-scale-down) reverse, var(--animation-fade-out) reverse;
+		animation-timing-function: var(--ease-squish-5);
+		animation-duration: 1s;
+		fill-opacity: 0.4;
+		filter: blur(0.1rem);
+		transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+	}
+	[astro-icon]:hover {
+		fill-opacity: 1;
+		// color: var(--teal-5);
+		filter: drop-shadow(0 0 8px var(--teal-7));
+		// , 0 0 12px var(--teal-7);
+		// animation: var(--animation-pulse);
+		scale: 120%;
+	}
+	[astro-icon='lns'],
+	[astro-icon='smni'] {
+		height: 4rem;
+	}
+</style>

@@ -1,0 +1,33 @@
+---
+import Link from '../components/Link.astro'
+import { SITE_HEADLINE, LNS_LINK, PCR_LINK, SMNI_LINK, WW_LINK } from '../config'
+---
+
+<header>
+	<nav>
+		<h1>{SITE_HEADLINE}</h1>
+		<ul role="list">
+			<Link icon="lns" name="Late Nite Snacks" link={LNS_LINK} />
+			<Link icon="smni" name="Samani Music" link={SMNI_LINK} />
+			<Link icon="pcr" name="pick.cell Records" link={PCR_LINK} />
+			<Link icon="ww" name="wach &amp; wütend" link={WW_LINK} />
+		</ul>
+	</nav>
+</header>
+
+<style lang="scss">
+	h1 {
+		animation: var(--animation-slide-in-down), var(--animation-fade-out) reverse;
+		animation-timing-function: var(--ease-squish-5);
+		animation-duration: 1s;
+		font-family: 'Unbounded', 'Unbounded-fallback';
+		font-size: clamp(2.4rem, 6vw + 1rem, 4.8rem);
+		font-weight: 900;
+		margin-top: 12vh;
+		margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px black, 3px 2px 8px white;
+	}
+	header {
+		overflow: hidden;
+	}
+</style>
