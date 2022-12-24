@@ -1,19 +1,17 @@
 ---
 // import { BackgroundPicture } from "astro-imagetools/components"
-import '../styles/main.scss'
+import '@styles/main.scss'
 import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
-import Head from '../components/BaseHead.astro'
+import Head from '@components/BaseHead.astro'
 
 export interface Props {
 	description?: string
 	title?: string
 }
-
-// const { title = { SITE_TITLE }, description = { SITE_DESCRIPTION } } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 	<!-- <BackgroundPicture
 		src="/bg.avif"
 		decoding="async"
@@ -36,22 +34,24 @@ export interface Props {
 				text-align: center;
 			}
 		</style>
-		<script>
-			// define a function that sets min-height of my-element to window.innerHeight:
-			const setHeight = () => {
-					document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
-			};
+		<!--
+		  <script>
+					// define a function that sets min-height of my-element to window.innerHeight:
+					const setHeight = () => {
+					 		document.getElementById("my-element").style.minHeight = window.innerHeight + "px"
+					};
 
-			// define mobile screen size:
-			let deviceWidth = window.matchMedia("(max-width: 1024px)");
+					// define mobile screen size:
+					let deviceWidth = window.matchMedia("(max-width: 1024px)");
 
-			if (deviceWidth.matches) {
-			// set an event listener that detects when innerHeight changes:
+					if (deviceWidth.matches) {
+					// set an event listener that detects when innerHeight changes:
 					window.addEventListener("resize", setHeight);
 
-			// call the function once to set initial height:
+					// call the function once to set initial height:
 					setHeight();
-			}
-		</script>
+				}
+			</script>
+		-->
 	</body>
 </html>
