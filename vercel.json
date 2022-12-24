@@ -25,7 +25,7 @@
         },
 				{
 					"key" : "Content-Security-Policy",
-					"value" : "script-src 'strict-dynamic' 'nonce-OWPo_NNjEWo7Wq4R6jjNEA' 'unsafe-inline' https:; object-src 'none'; base-uri 'self';"
+					"value" : "script-src 'strict-dynamic' 'nonce-Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf' 'unsafe-inline' https:; object-src 'none'; base-uri 'self';"
 				},
 				{
 					"key" : "Permissions-Policy",
