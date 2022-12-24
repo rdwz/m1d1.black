@@ -22,7 +22,31 @@
         {
           "key" : "X-XSS-Protection",
           "value" : "1; mode=block"
-        }
+        },
+				{
+					"key" : "Content-Security-Policy",
+					"value" : "script-src 'strict-dynamic' 'nonce-VTydQwf2VHNfy29C53u2EaNO-x6h3n8lwwdI17kQMjI' 'unsafe-inline' https:; object-src 'none'; base-uri 'self'; require-trusted-types-for 'script';"
+				},
+				{
+					"key" : "Permissions-Policy",
+					"value" : "geolocation=(self), microphone=()"
+				},
+				{
+					"key" : "Cross-Origin-Embedder-Policy",
+					"value" : "(unsafe-none|require-corp); report-to='default'"
+				},
+				{
+					"key" : "Cross-Origin-Embedder-Policy-Report-Only",
+					"value" : "(unsafe-none|require-corp); report-to='default'"
+				},
+				{
+					"key" : "Cross-Origin-Opener-Policy",
+					"value" : "(same-origin|same-origin-allow-popups|unsafe-none); report-to='default'"
+				},
+				{
+					"key" : "Cross-Origin-Resource-Policy",
+					"value" : "(same-site|same-origin|cross-origin)"
+				}
       ]
     }
 	]
