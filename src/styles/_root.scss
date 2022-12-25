@@ -20,8 +20,27 @@
 }
 
 body {
+	background: var(--color-bg);
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	place-items: center;
+	font-size: var(--text-base);
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Unbounded', 'Unbounded-fallback';
+}
+
+p {
+	font-family: 'IBM Plex Mono', 'IBM Plex Mono-fallback';
+}
+
+.glow {
+	text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+footer {
+	padding: 0;
 }
 
 ul {

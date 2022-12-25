@@ -44,15 +44,20 @@ import Footer from '@components/Footer.astro'
 		// background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(24,26,27,1) 35%, rgba(0,0,0,1) 100%);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-position: center 64%;
-		background-size: clamp(50%, 60vh, 100vh);
+		background-position: center;
+		background-size: max(33%, 70vh);
 		background-image: url('/bg.webp');
-		// background-image: url('/noise.png');
-		// background-image: image-set(url('/bg.avif') 1x, url('/bg.webp') 1x);
+		background-image: image-set(url('/bg.avif') type("image/avif"), url('/bg.webp') type("image/webp"));
 		color: white;
-		margin: 0;
-		padding: 0;
 	}
+	html {
+		animation: fadein 1s;
+	}
+		@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+		}
+
 	main {
 		&::after {
 			position: fixed;
@@ -73,9 +78,5 @@ import Footer from '@components/Footer.astro'
 			background: linear-gradient(90deg, darken(purple, 0.5), navy 20%, aqua);
 			// background: linear-gradient(90deg, purple, navy 20%, aqua);
 		}
-	}
-	main svg,
-	main h1 {
-		filter: drop-shadow(3px 5px 2px rgb(255 255 255 / 0.4));
 	}
 </style>
