@@ -1,7 +1,7 @@
 {
 	"name": "m1d1.black",
 	"type": "module",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"private": true,
 	"scripts": {
 		"build": "astro check && tsc --noEmit && astro build",
@@ -19,7 +19,8 @@
 	},
 	"devDependencies": {
 		"astro": "^1.7.2",
-		"bread-compressor-cli": "^1.1.0"
+		"bread-compressor-cli": "^1.1.0",
+		"husky": "^8.0.2"
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "^1.0.0",
