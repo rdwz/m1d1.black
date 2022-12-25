@@ -7,12 +7,15 @@ export interface Props {
 const { title, description, image = '/placeholder-social.jpg' } = Astro.props
 ---
 
-<!-- <base href="https://m1d1.black"> --><!-- Global Metadata -->
 <meta charset="UTF-8" />
 <meta name="generator" content={Astro.generator} />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="canonical" href="https://m1d1.black" />
-<link rel="icon" type="image/svg+xml" href="/midi.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json">
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -62,8 +65,9 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props
 </style>
 
 <script
-	nonce="Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf"
 	defer
+	nonce="Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf"
+	src="/stats/js/script.js"
+	data-api="/stats/api/event"
 	data-domain="m1d1.black"
-	src="https://js.m1d1.black/js/script.js">
-</script>
+></script>

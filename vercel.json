@@ -65,5 +65,15 @@
 				}
 			]
 		}
-	]
+	],
+	"rewrites": [
+    {
+      "source": "/stats/js/script.js",
+      "destination": "https://pa.basswave.net/js/script.js"
+    },
+    {
+      "source": "/stats/api/event",
+      "destination": "https://pa.basswave.net/api/event"
+    }
+  ]
 }
