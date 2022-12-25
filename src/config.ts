@@ -1,6 +1,8 @@
 export const SITE_HEADLINE = String('Black M1D1™')
 export const SITE_TITLE = String('Black M1D1™ - Official Web Page')
-export const SITE_DESCRIPTION = String('Official web page of Black M1D1 the Cologne DJ and producer.')
+export const SITE_DESCRIPTION = String(
+	'Official web page of Black M1D1 the Cologne DJ and producer.'
+)
 
 export const BANDCAMP_LINK = 'https://blackm1d1.bandcamp.com'
 export const BEATPORT_LINK = 'https://www.beatport.com/artist/black-m1d1/829411'

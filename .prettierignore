@@ -1,3 +1,4 @@
 backup/
+build/
 dist/
 pnpm-lock.yaml

@@ -1,53 +1,57 @@
 {
 	"framework": "astro",
 	"buildCommand": "astro build",
-  "devCommand": "astro dev",
+	"devCommand": "astro dev",
 	"installCommand": "pnpm install",
 	"headers": [
-    {
-      "source": "/(.*)",
-      "headers" : [
+		{
+			"source": "/(.*)",
+			"headers": [
 				{
-					"key" : "Strict-Transport-Security",
-					"value" : "max-age=63072000; includeSubDomains; preload"
-				},
-        {
-          "key" : "X-Content-Type-Options",
-          "value" : "nosniff"
-        },
-        {
-          "key" : "X-Frame-Options",
-          "value" : "DENY"
-        },
-        {
-          "key" : "X-XSS-Protection",
-          "value" : "1; mode=block"
-        },
-				{
-					"key" : "Content-Security-Policy",
-					"value" : "script-src 'strict-dynamic' 'nonce-Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf' 'unsafe-inline' https:; object-src 'none'; base-uri 'self';"
+					"key": "Link",
+					"value": "<https://pa.basswave.net>; rel=preconnect"
 				},
 				{
-					"key" : "Permissions-Policy",
-					"value" : "geolocation=(self), microphone=()"
+					"key": "Strict-Transport-Security",
+					"value": "max-age=63072000; includeSubDomains; preload"
 				},
 				{
-					"key" : "Cross-Origin-Embedder-Policy",
-					"value" : "(unsafe-none|require-corp); report-to='default'"
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
 				},
 				{
-					"key" : "Cross-Origin-Embedder-Policy-Report-Only",
-					"value" : "(unsafe-none|require-corp); report-to='default'"
+					"key": "X-Frame-Options",
+					"value": "DENY"
 				},
 				{
-					"key" : "Cross-Origin-Opener-Policy",
-					"value" : "(same-origin|same-origin-allow-popups|unsafe-none); report-to='default'"
+					"key": "X-XSS-Protection",
+					"value": "1; mode=block"
 				},
 				{
-					"key" : "Cross-Origin-Resource-Policy",
-					"value" : "(same-site|same-origin|cross-origin)"
+					"key": "Content-Security-Policy",
+					"value": "script-src 'strict-dynamic' 'nonce-Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf' 'unsafe-inline' https:; object-src 'none'; base-uri 'self';"
+				},
+				{
+					"key": "Permissions-Policy",
+					"value": "geolocation=(self), microphone=()"
+				},
+				{
+					"key": "Cross-Origin-Embedder-Policy",
+					"value": "(unsafe-none|require-corp); report-to='default'"
+				},
+				{
+					"key": "Cross-Origin-Embedder-Policy-Report-Only",
+					"value": "(unsafe-none|require-corp); report-to='default'"
+				},
+				{
+					"key": "Cross-Origin-Opener-Policy",
+					"value": "(same-origin|same-origin-allow-popups|unsafe-none); report-to='default'"
+				},
+				{
+					"key": "Cross-Origin-Resource-Policy",
+					"value": "(same-site|same-origin|cross-origin)"
 				}
-      ]
-    }
+			]
+		}
 	]
 }

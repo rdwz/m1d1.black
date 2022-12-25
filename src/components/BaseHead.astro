@@ -7,9 +7,9 @@ export interface Props {
 const { title, description, image = '/placeholder-social.jpg' } = Astro.props
 ---
 
-<!-- <base href="https://m1d1.black"> -->
-<!-- Global Metadata -->
+<!-- <base href="https://m1d1.black"> --><!-- Global Metadata -->
 <meta charset="UTF-8" />
+<link rel="preconnect" href="https://pa.basswave.net" />
 <meta name="generator" content={Astro.generator} />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="canonical" href="https://m1d1.black" />
@@ -48,11 +48,11 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props
 		font-display: swap;
 	}
 	@font-face {
-    font-family: "IBM Plex Mono-fallback";
+		font-family: 'IBM Plex Mono-fallback';
 		font-style: italic;
-    size-adjust: 138.2%;
-    src: local("Arial");
-}
+		size-adjust: 138.2%;
+		src: local('Arial');
+	}
 	@font-face {
 		font-family: 'IBM Plex Mono';
 		font-style: italic;
@@ -62,4 +62,9 @@ const { title, description, image = '/placeholder-social.jpg' } = Astro.props
 	}
 </style>
 
-<script nonce="Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf" defer data-domain="m1d1.black" src="https://pa.basswave.net/js/plausible.js"></script>
+<script
+	nonce="Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf"
+	defer
+	data-domain="m1d1.black"
+	src="https://pa.basswave.net/js/plausible.js"
+></script>
