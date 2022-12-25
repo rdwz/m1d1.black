@@ -47,16 +47,23 @@ import Footer from '@components/Footer.astro'
 		background-position: center;
 		background-size: max(33%, 70vh);
 		background-image: url('/bg.webp');
-		background-image: image-set(url('/bg.avif') type("image/avif"), url('/bg.webp') type("image/webp"));
+		background-image: image-set(
+			url('/bg.avif') type('image/avif'),
+			url('/bg.webp') type('image/webp')
+		);
 		color: white;
 	}
 	html {
 		animation: fadein 1s;
 	}
-		@keyframes fadein {
-				from { opacity: 0; }
-				to   { opacity: 1; }
+	@keyframes fadein {
+		from {
+			opacity: 0;
 		}
+		to {
+			opacity: 1;
+		}
+	}
 
 	main {
 		&::after {

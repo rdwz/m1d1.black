@@ -14,9 +14,8 @@ export default defineConfig({
 		compressor(),
 		purgecss({
 			fontFace: true,
-      keyframes: true,
-			content: ['./public/**/*',
-        './src/**/*.{astro,js,jsx,ts,tsx,vue}'],
+			keyframes: true,
+			content: ['./public/**/*', './src/**/*.{astro,js,jsx,ts,tsx,vue}'],
 			rejected: true,
 			variables: true
 		}),

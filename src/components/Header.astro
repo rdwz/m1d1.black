@@ -1,6 +1,6 @@
 ---
 import Link from '@components/Link.astro'
-import { SITE_HEADLINE, LNS_LINK, PCR_LINK, SMNI_LINK, WW_LINK } from '../config'
+import { SITE_HEADLINE, LNS_LINK, PCR_LINK, SMNI_LINK } from '../config'
 ---
 
 <header>
@@ -11,7 +11,6 @@ import { SITE_HEADLINE, LNS_LINK, PCR_LINK, SMNI_LINK, WW_LINK } from '../config
 			<Link icon="lns" name="Late Nite Snacks" link={LNS_LINK} />
 			<Link icon="pcr" name="pick.cell Records" link={PCR_LINK} />
 			<Link icon="smni" name="Samani Music" link={SMNI_LINK} />
-			<!-- <Link icon="ww" name="wach & wütend" link={WW_LINK} /> -->
 		</ul>
 	</nav>
 </header>
@@ -23,10 +22,9 @@ import { SITE_HEADLINE, LNS_LINK, PCR_LINK, SMNI_LINK, WW_LINK } from '../config
 		animation-duration: 1s;
 		font-size: clamp(2.4rem, 6vw + 1rem, 4.8rem);
 		font-weight: 900;
-		// margin-top: 2vh;
 		margin-bottom: 2rem;
 		// text-shadow: 1px 1px 2px black, 3px 2px 8px white;
-		opacity: .9;
+		opacity: 0.9;
 	}
 	nav {
 		margin-top: 1rem;
