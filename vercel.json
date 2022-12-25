@@ -12,6 +12,18 @@
 					"value": "<https://pa.basswave.net>; rel=preconnect"
 				},
 				{
+					"key": "Link",
+					"value": "<https://ww.crew.cologne>; rel=preconnect"
+				},
+				{
+					"key": "Link",
+					"value": "<https://latenitesnacks.com>; rel=preconnect"
+				},
+				{
+					"key": "Link",
+					"value": "<https://soundcloud.com>; rel=preconnect"
+				},
+				{
 					"key": "Strict-Transport-Security",
 					"value": "max-age=63072000; includeSubDomains; preload"
 				},

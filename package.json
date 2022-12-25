@@ -13,7 +13,8 @@
 		"start": "astro dev",
 		"postbuild": "purgecss --css dist/assets/*.css --content dist/index.html dist/assets/js/*.js --output build",
 		"compress": "bread-compressor build",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"measure": "psi https://m1d1.black --strategy=mobile"
 	},
 	"lint-staged": {
 		"*.{js,ts}": "eslint --fix",
@@ -48,6 +49,7 @@
 		"postcss-jit-props": "^1.0.8",
 		"prettier": "^2.8.1",
 		"prettier-plugin-astro": "^0.7.0",
+		"psi": "^4.1.0",
 		"sass": "^1.57.1",
 		"stylelint": "^14.16.0",
 		"stylelint-config-prettier": "^9.0.4",
