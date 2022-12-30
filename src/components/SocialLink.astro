@@ -23,7 +23,12 @@ if (socialMedia.includes(platform)) {
 ---
 
 <li>
-	<a aria-label={"Follow me on " + platform} href={new URL(link, Astro.url)} rel="external noopener" target="_blank">
+	<a
+		aria-label={'Follow me on ' + platform}
+		href={new URL(link, Astro.url)}
+		rel="external noopener"
+		target="_blank"
+	>
 		<Icon name={icon} alt={platform} />
 	</a>
 </li>
