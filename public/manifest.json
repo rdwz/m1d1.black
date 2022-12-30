@@ -10,12 +10,12 @@
 		{
 			"src": "black_m1d1.png",
 			"sizes": "512x512",
-			"type": "image\/png"
+			"type": "image/png"
 		},
-			{
+		{
 			"src": "blk_md.png",
 			"sizes": "192x192",
-			"type": "image\/png"
+			"type": "image/png"
 		}
 	]
 }
