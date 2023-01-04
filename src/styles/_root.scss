@@ -28,12 +28,12 @@ body {
 }
 
 h1 {
-	font-family: 'Unbounded', 'Unbounded-fallback';
+	font-family: 'Unbounded', 'Unbounded-fallback', sans-serif;
 }
 
-p {
-	font-family: 'IBM Plex Mono', 'IBM Plex Mono-fallback';
-}
+// p {
+// 	font-family: 'IBM Plex Mono', 'IBM Plex Mono-fallback';
+// }
 
 .glow {
 	text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);

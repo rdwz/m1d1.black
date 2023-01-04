@@ -23,7 +23,6 @@ module.exports = {
 				{
 					files: ['./src/**/*.ts'],
 					extends: [
-						'airbnb-typescript/base',
 						'eslint:recommended',
 						'plugin:@typescript-eslint/recommended',
 						'plugin:@typescript-eslint/eslint-recommended',
