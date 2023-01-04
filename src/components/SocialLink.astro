@@ -8,27 +8,14 @@ export interface Props {
 const { platform, link } = Astro.props
 
 let icon = 'simple-icons:'
-const socialMedia = [
-	'Bandcamp',
-	'Beatport',
-	'Discogs',
-	'Facebook',
-	'Instagram',
-	'Soundcloud',
-	'Spotify'
-]
+const socialMedia = ['Bandcamp', 'Beatport', 'Discogs', 'Facebook', 'Instagram', 'Soundcloud', 'Spotify']
 if (socialMedia.includes(platform)) {
 	icon += platform.toLowerCase()
 }
 ---
 
 <li>
-	<a
-		aria-label={'Follow me on ' + platform}
-		href={new URL(link, Astro.url)}
-		rel="external noopener"
-		target="_blank"
-	>
+	<a aria-label={'Follow me on ' + platform} href={new URL(link, Astro.url)} rel="external noopener" target="_blank">
 		<Icon name={icon} alt={platform} />
 	</a>
 </li>
