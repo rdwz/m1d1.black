@@ -1,7 +1,7 @@
 export const SITE_HEADLINE = String('Black M1D1™')
-export const SITE_TITLE = String('Black M1D1™ - Official Web Page')
+export const SITE_TITLE = String('Black M1D1™ - Unofficial Web Page')
 export const SITE_DESCRIPTION = String(
-	'Official web page of Black M1D1 the Cologne DJ and producer.'
+	'Unofficial web page of Black M1D1 the DJ and producer based in Cologne, Germany.'
 )
 
 export const BANDCAMP_LINK = 'https://blackm1d1.bandcamp.com'
