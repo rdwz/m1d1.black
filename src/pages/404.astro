@@ -1,0 +1,62 @@
+---
+import Layout from '@layouts/Base.astro'
+---
+
+<Layout>
+	<main>
+		<h1>404</h1>
+	</main>
+</Layout>
+
+<style lang="scss">
+	body {
+		background-blend-mode: screen;
+		// background-image: var(--gradient-8);
+		background-color: var(--color-bg);
+		// background: rgb(67,67,67);
+		// background: radial-gradient(circle, rgba(67,67,67,1) 0%, rgba(24,26,27,1) 35%, rgba(0,0,0,1) 100%);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center 55%;
+		background-size: max(33%, 70vh);
+		background-image: url('/bg.webp');
+		background-image: image-set(url('/bg.avif') type('image/avif'), url('/bg.webp') type('image/webp'));
+		color: white;
+	}
+	html {
+		animation: fadein 1s;
+	}
+	@keyframes fadein {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	main {
+		&::after {
+			position: fixed;
+			inset: 0;
+			z-index: -1;
+			--grad: radial-gradient(at 50%, red, #{rgba(red, 0.2)} 75%, transparent 100%);
+			--mask: var(--grad), var(--grad);
+			mask: var(--mask);
+			mask-composite: intersect;
+			mix-blend-mode: color;
+			content: '';
+		}
+		&::before {
+			background: #000;
+			filter: url(#f);
+		}
+		&::after {
+			background: linear-gradient(90deg, darken(purple, 0.5), navy 20%, aqua);
+		}
+	}
+
+	h1 {
+		
+	}
+</style>

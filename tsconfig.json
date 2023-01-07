@@ -1,6 +1,6 @@
 {
 	"extends": "astro/tsconfigs/strict",
-	"include": ["**/*.ts", "**/*.tsx", "**/*.jsx"],
+	"include": ["**/*.ts", "**/*.tsx", "**/*.jsx", "deploy.cjs"],
 	"exclude": ["node_modules"],
 	"compilerOptions": {
 		"importsNotUsedAsValues": "error",
