@@ -1,9 +1,9 @@
-const FtpDeploy = require('ftp-deploy')
+import FtpDeploy from 'ftp-deploy'
 const ftpDeploy = new FtpDeploy()
 
 const config = {
 	user: 'deploy@m1d1.black',
-	password: 's8n3s9U2r',
+	password: '',
 	host: 'm1d1.black',
 	port: 21,
 	localRoot: __dirname + '/dist',
