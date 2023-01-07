@@ -1,0 +1,33 @@
+{
+	"name": "Black M1D1",
+	"short_name": "BLK-M1D1",
+	"lang": "en",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "icon_light_512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"color_scheme": "light"
+		},
+		{
+			"src": "icon_dark_512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"color_scheme": "dark"
+		},
+		{
+			"src": "icon_light_192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"color_scheme": "light"
+		},
+		{
+			"src": "icon_dark_192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"color_scheme": "dark"
+		}
+	]
+}
