@@ -3,7 +3,6 @@
 	"include": ["**/*.ts", "**/*.tsx", "**/*.jsx", "deploy.cjs"],
 	"exclude": ["node_modules"],
 	"compilerOptions": {
-		"importsNotUsedAsValues": "error",
 		"types": ["astro/client"],
 		"target": "ESNext",
 		"module": "ESNext",
