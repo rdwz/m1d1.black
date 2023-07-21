@@ -23,7 +23,7 @@
 		"startCommand": "pnpm start"
 	},
 	"devDependencies": {
-		"@astrojs/sitemap": "^1.0.0",
+		"@astrojs/sitemap": "^2.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.48.0",
 		"@typescript-eslint/parser": "^5.48.0",
 		"astro": "^2.0.0",
