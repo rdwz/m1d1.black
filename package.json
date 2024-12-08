@@ -34,7 +34,7 @@
 		"astro-robots-txt": "^0.5.0",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.31.0",
-		"husky": "^8.0.3",
+		"husky": "^9.0.0",
 		"lint-staged": "^13.1.0",
 		"open-props": "^1.5.3",
 		"postcss": "^8.4.21",
