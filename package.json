@@ -33,7 +33,7 @@
 		"astro-purgecss": "^2.0.0",
 		"astro-robots-txt": "^0.5.0",
 		"autoprefixer": "^10.4.13",
-		"eslint": "^8.31.0",
+		"eslint": "^10.0.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.1.0",
 		"open-props": "^1.5.3",
